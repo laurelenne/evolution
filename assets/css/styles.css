@@ -1,0 +1,609 @@
+/* ---------------- reset css ---------------- */
+
+/* les epaisseurs des bordures de conteneurs se confondent */
+* {
+    box-sizing: border-box;
+}
+
+/* la taille de l'image dependra de son conteneur parent */
+img {
+    width: 100%;
+}
+
+body,
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    padding-left: 0;
+}
+
+h1,h2 {
+    font-family: sans-serif;
+    color: #fff;
+}
+
+
+/* ---------------- fin reset css ---------------- */
+
+
+
+/* conteneur principal => contient toutes les sections */
+#principal {
+    width: 1920px;
+    height: 100vh;
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center
+}
+
+
+/* alignement des blocs gauche / central / droite */
+
+
+
+/* taille conteneur central */
+#central {
+    width: 960px;
+    height: 916px;
+   /* border: 1px solid black;*/
+}
+
+
+/* taille conteneurs gauche et droite */
+#gauche,
+#droite {
+    width: 480px;
+    height: 916px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gauche {
+    justify-content: space-between;
+}
+
+#droite {
+    justify-content: flex-start;
+}
+
+
+
+/* ---------------- interieur bloc gauche ---------------- */
+.blocGauche {
+    text-align: center;
+    width: 470px;
+    height: 300px;
+    /*border: 1px solid black;*/
+
+}
+
+#statistiques {
+    background-image: url(../img/fondStat_sansText.png);
+    background-size: cover;
+}
+
+#statistiques h2 {
+    margin-top: 6%;
+    color: #2E5967;
+}
+
+.alignStat{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+#personnage {
+    /*background-image: url(../img/.png);*/
+}
+
+#carteConnaissance {
+    width: 270px;
+    height: 240px;
+    /*border: 1px solid black;*/
+    display: block;
+    justify-content: flex-end;
+    margin-left: 190px;
+}
+
+#carteConnaissance div {
+    width: 130px;
+    height: 240px;
+  /*  border: 1px solid black;*/ 
+    display: inline-block ;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+figure {
+   margin:0;
+}
+
+#hero {
+    /* border: 1px solid black; */
+}
+
+#ressources {
+   background-image: url(../img/fondRessource.png);
+   background-size: cover;
+}
+
+.os {
+    background-image: url(../img/ressourceOs.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bois {
+    background-image: url(../img/ressourceArbre.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pierre {
+    background-image: url(../img/ressourcePierre.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.vide{
+    
+}
+
+#ressources .alignStat {
+    margin: 0;
+    padding-left: 15%;
+}
+
+#ressources ul li {
+        width: 230px;
+        height: 35%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+}
+
+#ressources ul li , #ressources p{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 2%;
+    margin-bottom: 12%;
+    text-align: right;
+}
+
+/* ---------------- fin interieur bloc gauche ---------------- */
+
+
+
+/* ---------------- interieur bloc central ---------------- */
+
+.progressBar {
+    background-image: url(../img/progressBar0.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*height: 112px;*/
+    width: 660px;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+.progressBar1 {
+    background-image: url(../img/progressBar1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*height: 112px;*/
+    width: 660px;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+.progressBar2 {
+    background-image: url(../img/progressBar2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*height: 112px;*/
+    width: 660px;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+.progressBar3 {
+    background-image: url(../img/progressBar3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*height: 112px;*/
+    width: 660px;
+    margin-left: 15%;
+}
+
+#topCentre p span{
+    
+}
+
+#barreConnaissance{
+    font-family: sans-serif;
+    font-size: 1.7em;
+    color: yellow;
+    font-weight: bold;
+}
+
+#topCentre {
+    height: 125px;
+    width: 960px;
+    text-align: center;
+}
+
+#bgEre {
+    height: 191px;
+    width: 960px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 2%;
+}
+
+#bgEre div{
+    display: inline-flex;
+    width: 10%;
+    height: 35%;
+}
+
+.maison { 
+    background-image: url(../img/maisonLevel1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+} 
+
+.maison1{
+    background-image: url(../img/maisonLevel2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.maison2 { 
+    background-image: url(../img/maisonLevel3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#message {
+    width: 70px;
+    height: 50px;
+    background-color: #fff;
+    position:relative; 
+    margin-top: 100px;
+    padding: 0;
+}
+
+#infobulle{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: red;
+}
+
+#message span { 
+  display: none; 
+  -moz-border-radius:6px; 
+  -webkit-border-radius:6px; 
+  border-radius:6px; 
+  background-color: #eff1f3; 
+  font-size:1em; 
+  font-family: sans-serif;
+  font-style:italic; 
+  text-align: center;
+  padding-bottom: 150px;
+  
+} 
+
+#message:hover span 
+{ 
+  display:block; 
+  position:absolute; 
+  bottom :0; 
+  right :0; 
+  z-index:1000; 
+  width:250px; 
+  min-height:20px;
+  border:1px solid black; 
+  margin-bottom:60px; 
+  margin-right:-85px; 
+  overflow:hidden;
+  padding:8px;
+}
+
+#jeu {
+    height: 580px;
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#jeu div {
+    display: flex;
+    width: 10%;
+    height: 10%;
+}
+
+#file {
+    width: 600px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#periode{
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* ---------------- fin interieur bloc central ---------------- */
+
+
+
+/* ---------------- interieur bloc droite ---------------- */
+
+.bloc-droite {
+    text-align: center;
+    width: 400px;
+    /*height: 300px;*/
+    /*border: 1px solid black;*/
+}
+
+#shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 210px;
+}
+
+#bouton-ouvrir-shop {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/fondBoutonShop_sansText.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: #A48136;
+    padding-bottom: 3%;
+}
+
+#bouton-fermer-shop {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/fondBoutonShop_sansText.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: #A48136;
+    padding-bottom: 3%;
+}
+
+/* BLOC-SHOP */
+
+#bloc-shop {
+    display: none;
+    position: absolute;
+    top: 35%;
+    /*top: 387px;*/
+    left: 24%;
+    /*left: 480px;*/
+    height: 600px;
+    width: 960px;
+    background-image: url("../img/fondShopOuvert.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* Title */
+#container-title-shop {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-shop {}
+
+/* Items */
+#container-items-shop {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.containers-items-shop {
+    display: flex;
+    justify-content: space-around;
+    width: 83%;
+}
+
+.noms-items-shop {
+    color: aliceblue;
+    font-size: 1em;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Items Lvls */
+.boutons-itemslvls-shop {
+    width: 15%;
+    border-radius: 10px;
+    color: aliceblue;
+    height: 110px;
+}
+
+.noms-itemslvls-shop {}
+
+.prix-itemslvls-shop {
+    display: flex;
+    flex-direction: column;
+}
+
+#objets {
+    background-image: url(../img/fondObjetsSansText.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 420px;
+    width: 375px;
+    margin-top: 0;
+}
+
+#objets h2 {
+    margin-top: 10%;
+}
+
+#objetsStock{
+    margin-left: 29px;
+    margin-top: 40px;
+    width: 315px;
+    height: 288px;
+    /*border: 1px solid black;*/
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.objetscase {
+    width: 94px;
+    height: 88px;
+    /*border: 1px solid black;*/
+    display: inline-flex;
+    margin: 2px;
+}
+
+#bonusMaitre {
+
+}
+
+/*---------------------- catastrophe --------------------*/
+
+#catastrophe {
+    background-image: url(../img/dino.png);
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.imgitem{
+    border-radius:10%;
+}
+
+button:hover, .bois:hover, .os:hover, .pierre:hover, .maison:hover, .maison1:hover{
+    cursor: pointer;
+}
+
+#imgitem1lvl1Vide,
+#imgitem1lvl2Vide,
+#imgitem1lvl3Vide,
+#imgitem2lvl1Vide,
+#imgitem2lvl2Vide,
+#imgitem2lvl3Vide,
+#imgitem3lvl1Vide,
+#imgitem3lvl2Vide,
+#imgitem3lvl3Vide {
+    border-radius:10%;
+}
+[disabled]{
+    cursor:not-allowed !important;
+}
+
+#tardis {
+    background-image: url(../img/tardis.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+     width: 150px;
+    height: 150px;
+    position: relative;
+    /*top: 40px; left: 40px;*/
+}
+
+.oldTime{
+    background-image: url(../img/tardisIncrust.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+
+.outTime{
+    display: none;
+}
+
+.inTime {
+    display: flex;
+   animation: TimeAndRelativeDimensionInSpace 4s;
+}
+
+@keyframes TimeAndRelativeDimensionInSpace {
+    0% {
+        transform: translateX(-100px) translateY(0px);
+    }
+    50% {
+        transform: translateX(-45px) translateY(0px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.cacher{
+    display: none;
+}
+.attack{
+    display: flex; 
+}
+/*
+div img {
+    animation: finDuMonde 10s;
+    -webkit-animation:finDuMonde 10s;
+    animation-delay: 5s;
+    animation-direction:reverse;
+    animation-fill-mode:backwards;
+  }
+
+  @keyframes finDuMonde {
+      0% {
+          transform: translateX(0px);
+      }
+      50% {
+          transform: translateX(150px);
+      }
+      100% {
+          transform: translateX(150px) rotate(30deg);
+      }
+  }
+  @-webkit-keyframes masuperanimation {
+     copier coller l'anim a la fin
+*/
+/*------------------- fin catastrophe -------------------*/
+
+/* ---------------- fin interieur bloc droite ---------------- */
